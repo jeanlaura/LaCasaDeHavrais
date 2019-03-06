@@ -1,0 +1,32 @@
+<?php require_once '../controllers/controllerSupprimer-plats.php'; ?>
+<?php include 'header_back.php'; ?>
+<!-- CONTENT PAGE -->
+<div class="content-wrap marginTop" id="margSuppPlats">
+    <div class="container">
+        <div class="row">
+            <?php
+                if ($success){
+            ?>
+                <div class="col-md-12">
+                   <p>Votre plats à bien été supprimé !</p>
+                </div>
+                <div class="col-md-6 col-12 justify-content-center" align="center" id="btnSuppPlats">
+                    <div class="col-md-4">
+                        <a href="listPlats.php" class="btn btn-primary">Retour à la liste des plats</a>
+                    </div>
+                    <div class="col-md-4" align="center">
+                        <a href="index_back.php" class="btn btn-default">Accueil</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="ajout-plats.php" class="btn btn-info">Ajouter un plat</a>
+                    </div>
+                </div>
+            <?php        
+                }else{
+                    echo 'Espèce de noob, t\'es nul, ça à pas marché ! ET BIM !';
+                }
+            ?>
+        </div>
+    </div>
+</div>
+<?php include 'footer_back.php'; ?>
