@@ -25,7 +25,7 @@
                             <th scope="row" id="priceBackForeach"><?= $dishes->dishes_price ?></th>
                             <th scope="row" id="descBackForeach"><?= $dishes->dishes_description ?></th>
                             <th scope="row"><?= $dishes->categories_name ?></th>
-                            <th scope="row"><?= $dishes->subcategories_name ?></th>
+                            <th scope="row"><?= $dishes->subCategories_name ?></th>
                             <th scope="row">
                                 <a href="affiche-plat.php?id=<?= $dishes->dishes_id ?>" class="btn btn-warning" id="affPlatsBack" style="display: none;">Afficher</a>
                                 <a href="modifier-plats.php?id=<?= $dishes->dishes_id ?>" class="btn btn-warning" id="modPlatsBack">Modifier</a>

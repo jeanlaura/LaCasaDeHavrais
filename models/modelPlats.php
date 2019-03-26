@@ -27,10 +27,10 @@
         // Liste des plats au total
         function listDishes() {
             $sql = $this->database->query('
-                SELECT `dishes_id`, `dishes_name`, `dishes_description`, `dishes_price`, `categories_name`, `subcategories_name`
+                SELECT `dishes_id`, `dishes_name`, `dishes_description`, `dishes_price`, `categories_name`, `subCategories_name`
                 FROM `lcdh_dishes`
                 INNER JOIN `lcdh_categories` ON `lcdh_categories`.`categories_id` = `lcdh_dishes`.`categories_id`
-                INNER JOIN `lcdh_subcategories` ON `lcdh_subcategories`.`subcategories_id` = `lcdh_dishes`.`subcategories_id` 
+                INNER JOIN `lcdh_subCategories` ON `lcdh_subCategories`.`subCategories_id` = `lcdh_dishes`.`subCategories_id` 
             ');
             $result = $sql->fetchAll(PDO::FETCH_OBJ);
             return $result;

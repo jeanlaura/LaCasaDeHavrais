@@ -83,7 +83,7 @@
         }
         //Recherche des réservations
         function searchResa($search) {
-            $sql = $this->database->prepare('SELECT * FROM `lcdh_reservation` WHERE `lastnameResa` LIKE :search OR `mailResa` LIKE :search OR `tables_id` LIKE :search');
+            $sql = $this->database->prepare('SELECT * FROM `lcdh_reservation` WHERE `reservation_lastname` LIKE :search OR `reservation_mail` LIKE :search OR `tables_id` LIKE :search');
             $sql->bindValue(':search', '%'.$search.'%', PDO::PARAM_INT);
             $sql->execute();
             return $sql->fetchAll(PDO::FETCH_OBJ);

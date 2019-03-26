@@ -112,7 +112,6 @@
                             <div class="form-row">
                                 <div class="col-12 col-md-12" align="center" id="btnSubmitResa2">
                             <p>
-                                <button type="submit" class="btn btn-blue-grey" id="submitResaResponsive" name="submitResaResponsive" style="display:none;">Valider la<br>réservation</button>
                                 <button type="submit" class="btn btn-blue-grey" id="submitResa2" name="submitResa2">Valider la réservation</button>
                             </p>
                             <p>

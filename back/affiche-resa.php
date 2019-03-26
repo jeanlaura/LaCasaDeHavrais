@@ -24,6 +24,10 @@
                         <table class="table table-striped" id="tableAffPlats">
                             <tbody>
                                 <tr>
+                                    <th>Numéro de réservation </th>
+                                    <td><?= $resa->reservation_id ?></td>
+                                </tr>
+                                <tr>
                                     <th>Nom </th>
                                     <td><?= $resa->reservation_lastname ?></td>
                                 </tr>

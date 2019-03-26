@@ -37,17 +37,17 @@
                         </li>
                         <li id="liDishes">
                             <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-chevron-right"></i> Plats<i class="fas fa-angle-down rotate-icon"></i>
+                                <i class="fas fa-chevron-right"></i>Plats<i class="fas fa-angle-down rotate-icon"></i>
                             </a>
                             <div class="collapsible-body" id="divMenusDishes">
                                 <ul>
                                     <li><a href="ajout-plats.php" class="waves-effect">Ajouter</a></li>
                                     <li><a href="listPlats.php" class="waves-effect">Liste</a></li>
                                     <li>
-                                        <form class="search-form" id="searchNavAdminDishes"  method="post" action="listPlats.php">
+                                        <form class="search-form" id="searchNavAdminDishes" method="post" action="listPlats.php">
                                             <div class="form-group md-form mt-0 pt-1 waves-light waves-effect waves-light">
                                                 <input type="text" class="form-control" id="inputSearchNavAdminDishes" name="inputSearchNavAdminDishes" placeholder="Search">
-                                                <button type="submit" name="search" class="btn btn-light validate btn-block">Rechercher</button>
+                                                <button type="submit" name="searchDishes" class="btn btn-light validate btn-block">Rechercher</button>
                                             </div>
                                         </form>
                                     </li>
@@ -74,17 +74,17 @@
                         </li>
                         <li id="liResa">
                             <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-eye"></i> Réservation<i class="fas fa-angle-down rotate-icon"></i>
+                                <i class="fas fa-eye"></i>Réservation<i class="fas fa-angle-down rotate-icon"></i>
                             </a>
                             <div class="collapsible-body" id="divMenusResa">
                                 <ul>
                                     <li><a href="ajout-reservation.php" class="waves-effect">Ajouter</a></li>
                                     <li><a href="listReservation.php" class="waves-effect">Liste</a></li>
                                     <li>
-                                        <form class="search-form" role="search" id="searchNavAdminResa">
+                                        <form class="search-form" id="searchNavAdminResa" method="post" action="listReservation.php">
                                             <div class="form-group md-form mt-0 pt-1 waves-light waves-effect waves-light">
-                                                <input type="text" class="form-control" id="inputSearchNavAdminResa" placeholder="Search">
-                                                <button type="submit" name="submit" class="btn btn-light validate btn-block">Rechercher</button>
+                                                <input type="text" class="form-control" id="inputSearchNavAdminResa" name="inputSearchNavAdminResa" placeholder="Search">
+                                                <button type="submit" name="searchResa" class="btn btn-light validate btn-block">Rechercher</button>
                                             </div>
                                         </form>
                                     </li>

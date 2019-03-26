@@ -5,8 +5,8 @@
     $resaOBJ = new reservation();
     
     //TOUS
-    if(isset($_POST['search'])){
-        $arrayResa = $resaOBJ->searchResa($_POST['inputSearchNavAdminDishes']);
+    if(isset($_POST['searchResa'])){
+        $arrayResa = $resaOBJ->searchResa($_POST['inputSearchNavAdminResa']);
     }else{
         $arrayResa = $resaOBJ->listResa();
     }

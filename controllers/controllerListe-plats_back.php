@@ -5,10 +5,9 @@
     $dishesOBJ = new dishes();
     
     //TOUS
-    if(isset($_POST['search'])){
+    if(isset($_POST['searchDishes'])){
         $arrayDishes = $dishesOBJ->searchDishes($_POST['inputSearchNavAdminDishes']);
     }else{
         $arrayDishes = $dishesOBJ->listDishes();
-    }
-    
+    } 
 ?>

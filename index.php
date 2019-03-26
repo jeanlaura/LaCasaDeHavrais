@@ -339,6 +339,9 @@
                             <p>
                                 À bientôt dans notre restaurant.
                             </p>
+                            <p>
+                                <a href="http://lacasadehavrais/index.php" class="btn btn-light">Retour à l'accueil</a>
+                            </p>
                         <?php
                         } else { ?>
                     <form class="formResa" id="formResa" name="formResa" method="POST" action="">
